@@ -12,6 +12,17 @@
 		66012ABA1C148CB000F2B5BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66012AB81C148CB000F2B5BB /* Main.storyboard */; };
 		66012ABC1C148CB000F2B5BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66012ABB1C148CB000F2B5BB /* Assets.xcassets */; };
 		66012ABF1C148CB000F2B5BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66012ABD1C148CB000F2B5BB /* LaunchScreen.storyboard */; };
+		66012AD51C148D4300F2B5BB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 66012ACB1C148D4300F2B5BB /* FMDatabase.m */; };
+		66012AD61C148D4300F2B5BB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 66012ACD1C148D4300F2B5BB /* FMDatabaseAdditions.m */; };
+		66012AD71C148D4300F2B5BB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66012ACF1C148D4300F2B5BB /* FMDatabasePool.m */; };
+		66012AD81C148D4300F2B5BB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 66012AD11C148D4300F2B5BB /* FMDatabaseQueue.m */; };
+		66012AD91C148D4300F2B5BB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 66012AD41C148D4300F2B5BB /* FMResultSet.m */; };
+		66012ADD1C148E5100F2B5BB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66012ADC1C148E5100F2B5BB /* libsqlite3.tbd */; };
+		66012ADF1C14905800F2B5BB /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66012ADE1C14905800F2B5BB /* University.swift */; };
+		66012AE11C14944900F2B5BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66012AE01C14944900F2B5BB /* Constants.swift */; };
+		66012AE61C1524D000F2B5BB /* pocketu.db in Resources */ = {isa = PBXBuildFile; fileRef = 66012AE51C1524BA00F2B5BB /* pocketu.db */; };
+		660B21191C152F3F008BBF61 /* RankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B21181C152F3F008BBF61 /* RankCell.swift */; };
+		66A6F5B31C162C3800DF78A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,24 @@
 		66012ABB1C148CB000F2B5BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66012ABE1C148CB000F2B5BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66012AC01C148CB000F2B5BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66012AC91C148D4200F2B5BB /* PocketU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PocketU-Bridging-Header.h"; sourceTree = "<group>"; };
+		66012ACA1C148D4300F2B5BB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		66012ACB1C148D4300F2B5BB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		66012ACC1C148D4300F2B5BB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		66012ACD1C148D4300F2B5BB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		66012ACE1C148D4300F2B5BB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		66012ACF1C148D4300F2B5BB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		66012AD01C148D4300F2B5BB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		66012AD11C148D4300F2B5BB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		66012AD21C148D4300F2B5BB /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		66012AD31C148D4300F2B5BB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		66012AD41C148D4300F2B5BB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		66012ADC1C148E5100F2B5BB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		66012ADE1C14905800F2B5BB /* University.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		66012AE01C14944900F2B5BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		66012AE51C1524BA00F2B5BB /* pocketu.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocketu.db; sourceTree = "<group>"; };
+		660B21181C152F3F008BBF61 /* RankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankCell.swift; sourceTree = "<group>"; };
+		66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66012ADD1C148E5100F2B5BB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +68,7 @@
 		66012AA81C148CB000F2B5BB = {
 			isa = PBXGroup;
 			children = (
+				66012ADC1C148E5100F2B5BB /* libsqlite3.tbd */,
 				66012AB31C148CB000F2B5BB /* PocketU */,
 				66012AB21C148CB000F2B5BB /* Products */,
 			);
@@ -54,14 +85,79 @@
 		66012AB31C148CB000F2B5BB /* PocketU */ = {
 			isa = PBXGroup;
 			children = (
-				66012AB41C148CB000F2B5BB /* AppDelegate.swift */,
-				66012AB61C148CB000F2B5BB /* ViewController.swift */,
-				66012AB81C148CB000F2B5BB /* Main.storyboard */,
-				66012ABB1C148CB000F2B5BB /* Assets.xcassets */,
-				66012ABD1C148CB000F2B5BB /* LaunchScreen.storyboard */,
-				66012AC01C148CB000F2B5BB /* Info.plist */,
+				66012AE21C14968000F2B5BB /* Model */,
+				66012AE31C14968900F2B5BB /* Controller */,
+				66012AE41C14968E00F2B5BB /* View */,
+				66012AC71C148D1000F2B5BB /* Library */,
+				66012AC61C148CDF00F2B5BB /* Resources */,
 			);
 			path = PocketU;
+			sourceTree = "<group>";
+		};
+		66012AC61C148CDF00F2B5BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66012AE51C1524BA00F2B5BB /* pocketu.db */,
+				66012AB41C148CB000F2B5BB /* AppDelegate.swift */,
+				66012AE01C14944900F2B5BB /* Constants.swift */,
+				66012ABD1C148CB000F2B5BB /* LaunchScreen.storyboard */,
+				66012AC01C148CB000F2B5BB /* Info.plist */,
+				66012ABB1C148CB000F2B5BB /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		66012AC71C148D1000F2B5BB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				66012AC91C148D4200F2B5BB /* PocketU-Bridging-Header.h */,
+				66012AC81C148D3700F2B5BB /* FMDB */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		66012AC81C148D3700F2B5BB /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				66012ACA1C148D4300F2B5BB /* FMDatabase.h */,
+				66012ACB1C148D4300F2B5BB /* FMDatabase.m */,
+				66012ACC1C148D4300F2B5BB /* FMDatabaseAdditions.h */,
+				66012ACD1C148D4300F2B5BB /* FMDatabaseAdditions.m */,
+				66012ACE1C148D4300F2B5BB /* FMDatabasePool.h */,
+				66012ACF1C148D4300F2B5BB /* FMDatabasePool.m */,
+				66012AD01C148D4300F2B5BB /* FMDatabaseQueue.h */,
+				66012AD11C148D4300F2B5BB /* FMDatabaseQueue.m */,
+				66012AD21C148D4300F2B5BB /* FMDB.h */,
+				66012AD31C148D4300F2B5BB /* FMResultSet.h */,
+				66012AD41C148D4300F2B5BB /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		66012AE21C14968000F2B5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66012ADE1C14905800F2B5BB /* University.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		66012AE31C14968900F2B5BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				660B21181C152F3F008BBF61 /* RankCell.swift */,
+				66012AB61C148CB000F2B5BB /* ViewController.swift */,
+				66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		66012AE41C14968E00F2B5BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66012AB81C148CB000F2B5BB /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66012AE61C1524D000F2B5BB /* pocketu.db in Resources */,
 				66012ABF1C148CB000F2B5BB /* LaunchScreen.storyboard in Resources */,
 				66012ABC1C148CB000F2B5BB /* Assets.xcassets in Resources */,
 				66012ABA1C148CB000F2B5BB /* Main.storyboard in Resources */,
@@ -136,8 +233,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A6F5B31C162C3800DF78A6 /* DetailViewController.swift in Sources */,
+				66012AD51C148D4300F2B5BB /* FMDatabase.m in Sources */,
 				66012AB71C148CB000F2B5BB /* ViewController.swift in Sources */,
+				66012AD91C148D4300F2B5BB /* FMResultSet.m in Sources */,
+				66012AD71C148D4300F2B5BB /* FMDatabasePool.m in Sources */,
 				66012AB51C148CB000F2B5BB /* AppDelegate.swift in Sources */,
+				66012ADF1C14905800F2B5BB /* University.swift in Sources */,
+				66012AD61C148D4300F2B5BB /* FMDatabaseAdditions.m in Sources */,
+				660B21191C152F3F008BBF61 /* RankCell.swift in Sources */,
+				66012AD81C148D4300F2B5BB /* FMDatabaseQueue.m in Sources */,
+				66012AE11C14944900F2B5BB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PocketU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Edward.PocketU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketU/PocketU-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,10 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PocketU/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Edward.PocketU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PocketU/PocketU-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -287,6 +398,7 @@
 				66012AC51C148CB000F2B5BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
