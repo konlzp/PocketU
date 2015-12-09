@@ -23,6 +23,9 @@
 		66012AE61C1524D000F2B5BB /* pocketu.db in Resources */ = {isa = PBXBuildFile; fileRef = 66012AE51C1524BA00F2B5BB /* pocketu.db */; };
 		660B21191C152F3F008BBF61 /* RankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B21181C152F3F008BBF61 /* RankCell.swift */; };
 		66A6F5B31C162C3800DF78A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */; };
+		B6DE9AB21C17C2A8002F4D08 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE9AB11C17C2A8002F4D08 /* CSV.swift */; };
+		B6DE9AB41C17C2CC002F4D08 /* universityRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DE9AB31C17C2CC002F4D08 /* universityRanking.swift */; };
+		B6DE9AB61C17C2D8002F4D08 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6DE9AB51C17C2D8002F4D08 /* data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		66012AE51C1524BA00F2B5BB /* pocketu.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = pocketu.db; sourceTree = "<group>"; };
 		660B21181C152F3F008BBF61 /* RankCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankCell.swift; sourceTree = "<group>"; };
 		66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B6DE9AB11C17C2A8002F4D08 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		B6DE9AB31C17C2CC002F4D08 /* universityRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = universityRanking.swift; sourceTree = "<group>"; };
+		B6DE9AB51C17C2D8002F4D08 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		66012AC61C148CDF00F2B5BB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B6DE9AB51C17C2D8002F4D08 /* data.csv */,
 				66012AE51C1524BA00F2B5BB /* pocketu.db */,
 				66012AB41C148CB000F2B5BB /* AppDelegate.swift */,
 				66012AE01C14944900F2B5BB /* Constants.swift */,
@@ -138,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				66012ADE1C14905800F2B5BB /* University.swift */,
+				B6DE9AB11C17C2A8002F4D08 /* CSV.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 			children = (
 				660B21181C152F3F008BBF61 /* RankCell.swift */,
 				66012AB61C148CB000F2B5BB /* ViewController.swift */,
+				B6DE9AB31C17C2CC002F4D08 /* universityRanking.swift */,
 				66A6F5B21C162C3800DF78A6 /* DetailViewController.swift */,
 			);
 			name = Controller;
@@ -221,6 +230,7 @@
 			files = (
 				66012AE61C1524D000F2B5BB /* pocketu.db in Resources */,
 				66012ABF1C148CB000F2B5BB /* LaunchScreen.storyboard in Resources */,
+				B6DE9AB61C17C2D8002F4D08 /* data.csv in Resources */,
 				66012ABC1C148CB000F2B5BB /* Assets.xcassets in Resources */,
 				66012ABA1C148CB000F2B5BB /* Main.storyboard in Resources */,
 			);
@@ -241,7 +251,9 @@
 				66012AB51C148CB000F2B5BB /* AppDelegate.swift in Sources */,
 				66012ADF1C14905800F2B5BB /* University.swift in Sources */,
 				66012AD61C148D4300F2B5BB /* FMDatabaseAdditions.m in Sources */,
+				B6DE9AB21C17C2A8002F4D08 /* CSV.swift in Sources */,
 				660B21191C152F3F008BBF61 /* RankCell.swift in Sources */,
+				B6DE9AB41C17C2CC002F4D08 /* universityRanking.swift in Sources */,
 				66012AD81C148D4300F2B5BB /* FMDatabaseQueue.m in Sources */,
 				66012AE11C14944900F2B5BB /* Constants.swift in Sources */,
 			);

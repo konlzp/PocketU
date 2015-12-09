@@ -20,40 +20,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load Database
-        let dbPath = NSBundle.mainBundle().pathForResource("pocketu", ofType: "db")
-        let db = FMDatabase(path: dbPath);
+        let csvFile = NSBundle.mainBundle().pathForResource("data", ofType: "csv")
         
-        if !db.open() {
-            print("Unable to open database")
-            return
-        }
+        let error:NSErrorPointer = nil
         
-        // Execute query and push results into universities array
-        let query = "SELECT " +
-            "\(Constants.DB_COLUMS.UNIV_NAME)," +
-            "\(Constants.DB_COLUMS.OV_SCORE)," +
-            "\(Constants.DB_COLUMS.COUNTRY)," +
-            "\(Constants.DB_COLUMS.WD_RANKING)" +
-            " FROM SJ_RANKING"
-        do {
-            let rs = try db.executeQuery(query, values: nil)
+        if let csv = CSV(contentsOfFile: csvFile!, error: error) {
+            let rows = csv.rows
+            let header = csv.headers
             
-            // Push query result into array
-            while rs.next() {
-                let name = rs.objectForColumnName(Constants.DB_COLUMS.UNIV_NAME) as! String
-                let score = rs.objectForColumnName(Constants.DB_COLUMS.OV_SCORE) as! Int
-                let country = rs.objectForColumnName(Constants.DB_COLUMS.COUNTRY) as! String
-                let wdRanking = rs.objectForColumnName(Constants.DB_COLUMS.WD_RANKING) as! String
-                
-                universities.append(University(name: name, wdRanking: wdRanking, totalScore: score, country: country))
+            for var row in rows {
+                var scores = [String : Double]()
+                for ind in 3...7 {
+                    scores[header[ind]] = Double(row[header[ind]]!)
+                }
+                universities.append(University(name: row[header[1]]!, scores: scores, country: row[header[2]]!))
             }
         }
-        catch let error as NSError{
-            print("Query Failed. \(error.localizedDescription)")
-        }
         
-        db.close()
+        let weights = ["RESEARCH":0.3, "TEACHING":0.4, "INCOME":0.2, "BULLSHIT":0.1, "FM_RATIO":0.0]
+        
+        universities = ranking(universities, weights: weights)
         
         // Self sizing cell
         mainTableView.estimatedRowHeight = 80.0
